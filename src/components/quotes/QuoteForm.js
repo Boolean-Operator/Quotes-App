@@ -20,6 +20,7 @@ const QuoteForm = (props) => {
 
     props.onAddQuote({ author: enteredAuthor, text: enteredText });
   }
+
   const formFocusHandler = () => {
     setIsEntering(true);
   };

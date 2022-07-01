@@ -24,7 +24,7 @@ body {
 
 .btn {
   text-decoration: none;
-  background-color: teal;
+  background-color: steelblue;
   color: white;
   border-radius: 4px;
   padding: 0.75rem 1.5rem;
@@ -34,14 +34,15 @@ body {
 
 .btn:hover,
 .btn:active {
-  background-color: #11acac;
-  border-color: #11acac;
+  background-color: cornflowerblue;
+  border-color: cornflowerblue;
+  color: #0d0200;
 }
 
 .btn--flat {
   cursor: pointer;
   font: inherit;
-  color: teal;
+  color: cornflowerblue;
   border: none;
   background-color: none;
   text-decoration: none;
@@ -51,6 +52,6 @@ body {
 
 .btn--flat:hover,
 .btn--flat:active {
-  background-color: teal;
-  color: white;
+  background-color: cornflowerblue;
+  color: #0d0200;
 }

@@ -9,7 +9,7 @@ const QuoteItem = (props) => {
           <p>{props.text}</p>
         </blockquote>
         <div className={classes.blockcaption}>
-          <figcaption>Rating: {props.score} / 5 stars</figcaption>
+          <figcaption>Rating: {props.score} / 5</figcaption>
           <figcaption>{props.author}</figcaption>
         </div>
       </figure>
