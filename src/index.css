@@ -55,3 +55,10 @@ body {
   background-color: cornflowerblue;
   color: #0d0200;
 }
+
+.hal {
+  background-color: black;
+  flex-direction: column;
+  font-size: 1.25rem;
+  color: lightgray;
+}
