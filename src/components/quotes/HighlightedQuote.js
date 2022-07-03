@@ -4,7 +4,10 @@ const HighlightedQuote = (props) => {
   return (
     <figure className={classes.quote}>
       <p>{props.text}</p>
-      <figcaption>{props.author}</figcaption>
+      <div className={classes.blockcaption}>
+        <figcaption>Rating: {props.rating} / 100</figcaption>
+        <figcaption>{props.author}</figcaption>
+      </div>
     </figure>
   );
 };

@@ -18,3 +18,8 @@
   text-align: right;
   color: #a1e0e0;
 }
+
+.quote .blockcaption {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,11 +1,11 @@
 import hal from '../assets/hal.png';
-import classes from './NotFound.module.css';
+import classes from './PageNotFound.module.css';
 
 const NotFound = () => {
   return (
     <div id="main" className="centered hal">
       <div>
-        <p>Error 404</p>
+        <p>Open the pod bay doors, HAL.</p>
         <img src={hal} alt="HAL 9000 error" />
         <h1>I'm sorry Dave.</h1>
       </div>

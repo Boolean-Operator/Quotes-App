@@ -46,7 +46,7 @@ const QuoteList = (props) => {
             id={quote.id}
             author={quote.author}
             text={quote.text}
-            score={quote.score}
+            rating={quote.rating}
           />
         ))}
       </ul>

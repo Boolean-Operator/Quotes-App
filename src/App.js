@@ -3,7 +3,7 @@ import Layout from './components/layout/Layout';
 import AllQuotes from './pages/AllQuotes';
 import QuoteDetail from './pages/QuoteDetail';
 import NewQuote from './pages/NewQuote';
-import NotFound from './pages/NotFound';
+import PageNotFound from './pages/PageNotFound';
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
             <NewQuote />
           </Route>
           <Route path="*">
-            <NotFound />
+            <PageNotFound />
           </Route>
         </Switch>
       </Layout>

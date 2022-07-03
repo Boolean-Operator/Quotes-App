@@ -8,6 +8,7 @@ import classes from './QuoteForm.module.css';
 const QuoteForm = (props) => {
   const [isEntering, setIsEntering] = useState(false);
   const authorInputRef = useRef();
+  const ratingInputRef = useRef();
   const textInputRef = useRef();
 
   function submitFormHandler(event) {
@@ -15,10 +16,15 @@ const QuoteForm = (props) => {
 
     const enteredAuthor = authorInputRef.current.value;
     const enteredText = textInputRef.current.value;
+    const enteredRating = ratingInputRef.current.value;
 
     // optional: Could validate here
 
-    props.onAddQuote({ author: enteredAuthor, text: enteredText });
+    props.onAddQuote({
+      author: enteredAuthor,
+      text: enteredText,
+      rating: enteredRating,
+    });
   }
 
   const formFocusHandler = () => {
@@ -55,6 +61,16 @@ const QuoteForm = (props) => {
           <div className={classes.control}>
             <label htmlFor="text">Text</label>
             <textarea id="text" rows="5" ref={textInputRef}></textarea>
+          </div>
+          <div className={classes.control}>
+            <label htmlFor="rating">Rating</label>
+            <input
+              type="number"
+              id="rating"
+              min="1"
+              max="100"
+              ref={ratingInputRef}
+            />
           </div>
           <div className={classes.actions}>
             <button onClick={finishedEnteringHandler} className="btn">
